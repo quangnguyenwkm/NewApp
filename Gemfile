@@ -24,8 +24,16 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # gem 'rack-cors'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-byebug'
+    gem 'pry-doc'
+    gem 'pry-rails'
+    gem 'pry-stack_explorer'
+    gem 'shoulda-matchers'
+    gem 'dotenv-rails'
+    gem 'faker'
+    gem 'faker-japanese'
+    gem 'byebug', platforms: %i[mri mingw x64_mingw]
+    gem 'awesome_print'
 end
 
 group :development do
