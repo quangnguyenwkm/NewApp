@@ -4,7 +4,7 @@ class CreateProfiles < ActiveRecord::Migration[6.1]
       t.string :full_name
       t.string :phone_number
       t.references :user, type: :uuid
-
+      
       t.timestamps
     end
   end
